@@ -72,3 +72,8 @@ Developers are encouraged to create tools for Auroracoin to support the adoption
 payments, will help Icelanders start using the currency in their daily lives.
 
 Interested in helping out? Please email auroracoin@auroracoin.is, and let us know how you can help.
+
+
+## OSX
+export OPENSSL_ROOT_DIR=/usr/local/Cellar/openssl/1.0.2t/
+export OPENSSL_INCLUDE_DIR=/usr/local/Cellar/openssl/1.0.2t/include
