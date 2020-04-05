@@ -48,10 +48,12 @@ SET(UTIL_SOURCES
   util/time.cpp
 )
 
+include_directories("univalue/include")
+include_directories("leveldb/helpers/memenv")
+
 find_package(OpenSSL)
 if (OPENSSL_FOUND)
     include_directories(${OPENSSL_INCLUDE_DIR})
-    include_directories("univalue/include")
     ADD_LIBRARY(${LIBAURORACOIN_UTIL} STATIC ${UTIL_SOURCES})
     set_property(TARGET ${LIBAURORACOIN_UTIL} PROPERTY CXX_STANDARD 11)
 endif()

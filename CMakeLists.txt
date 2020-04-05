@@ -13,4 +13,9 @@ add_definitions(-DCOPYRIGHT_HOLDERS="[The %s developers]")
 add_definitions(-DCOPYRIGHT_HOLDERS_SUBSTITUTION="[[Auroracoin]]")
 
 
+# Compatibility
+add_definitions(-DHAVE_DECL_STRNLEN)
+add_definitions(-DHAVE_WORKING_BOOST_SLEEP_FOR)
+add_definitions(-DPACKAGE_NAME="Auroracoin")
+
 ADD_SUBDIRECTORY(src)
